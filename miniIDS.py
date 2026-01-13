@@ -946,7 +946,7 @@ def detect_scan_DoS(packet, user_ip):
 
 # 패킷 캡처 옵션 설정 및 실행 함수
 def sniffing(filter, user_ip):
-    sniff(filter=filter, prn=lambda pkt: detect_attack(pkt, user_ip), count=0, timeout=60)
+    sniff(filter=filter, prn=lambda pkt: detect_attack(pkt, user_ip), count=0)
 
 # 파일이 제일 처음 실행하는 부분
 if __name__ == '__main__':
